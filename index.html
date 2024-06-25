@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 h-screen flex items-center justify-center">
+    <div id="questionContainer" class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+        <div id="count" class="text-lg text-gray-800 mb-4">Question <span id="current"></span> of <span id="total"></span></div>
+        <div id="question" class="text-xl font-semibold text-gray-900 mb-6"></div>
+        <div id="answers" class="space-y-4">
+            <button class="answerBtn block w-full text-left py-2 px-4 rounded-lg shadow-md bg-blue-500 text-white hover:bg-blue-600 transition duration-200" data-index="a"></button>
+            <button class="answerBtn block w-full text-left py-2 px-4 rounded-lg shadow-md bg-blue-500 text-white hover:bg-blue-600 transition duration-200" data-index="b"></button>
+            <button class="answerBtn block w-full text-left py-2 px-4 rounded-lg shadow-md bg-blue-500 text-white hover:bg-blue-600 transition duration-200" data-index="c"></button>
+            <button class="answerBtn block w-full text-left py-2 px-4 rounded-lg shadow-md bg-blue-500 text-white hover:bg-blue-600 transition duration-200" data-index="d"></button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
